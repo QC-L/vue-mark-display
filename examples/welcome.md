@@ -1,25 +1,72 @@
-# Welcome
+# 聊聊小程序
 
-this is a intro about `vue-mark-display`
-
----
-
-## Usage
-
-1. install & import from `vue-mark-display`
-2. use `<mark-display>` in template
+新来的 李其昌
 
 ---
 
-### Import in Script
+## 目录
+
+1. 简介
+2. 小程序及页面生命周期
+3. 原生组件及自定义组件
+4. 神奇的 Button
+5. 路由及本地存储
+6. Tips
+
+---
+
+### 简介
+
+---
+
+什么是小程序？
+
+---
+
+小程序是**业务形态**，并不是~技术形态~。
+
+---
+
+目前有哪些小程序？
+
+---
+
+据不完全统计（我知道的）有以下这些：
+
+**微信小程序**、苏宁小程序、**QQ 轻应用**、
+
+**头条（抖音）小程序**、百度小程序、
+
+阿里小程序（支付宝、淘宝、钉钉）、
+
+快应用等
+
+---
+
+API 的设计及规范目前都以**微信小程序**为标准，
+
+尽管各大平台都有自己的实现，但大思路基本**一致**。
+
+---
+
+所以...
+
+---
+
+接下来，我们以微信小程序为例
+
+---
 
 ```html
-<script>
-import MarkDisplay from "vue-mark-display"
-export default {
-  components: { MarkDisplay }
-}
-</script>
+├── pages/
+├── config/
+├── components/
+├── assets/
+├── app.js
+├── app.json
+├── app.wxss
+├── project.config.json
+├── sitemap.json
 ```
 
 ---
