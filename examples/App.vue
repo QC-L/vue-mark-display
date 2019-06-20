@@ -6,7 +6,7 @@
     auto-blank-target
     base-url="https://github.com/"
     support-preview
-    :src="welcome"
+    :src="miniapp"
     @title="setTitle"
     ref="display"
   ></mark-display>
@@ -16,11 +16,11 @@
 import Hammer from "hammerjs";
 // import MarkDisplay from "vue-mark-display";
 import MarkDisplay from "../index";
-import welcome from "./welcome.md";
+import miniapp from "./miniapp.md";
 
 export default {
   components: { MarkDisplay },
-  data: () => ({ welcome }),
+  data: () => ({ miniapp }),
   mounted() {
     const mc = new Hammer(this.$el);
     const display = this.$refs.display;
@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     setTitle({ title }) {
-      document.title = [title, "Example"].filter(Boolean).join(" - ");
+      document.title = [title, "QC-L"].filter(Boolean).join(" - ");
     }
   }
 };
